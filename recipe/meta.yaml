@@ -1,5 +1,5 @@
 {% set name = "metar" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3f63910815f8050e1c4e276e87aacfd1b86fde4304eac91029dd20884f5d189b
+  sha256: bee673dab1cf3767d5a5fcb8b67a2d0194f686503050ab94ffd08fd9a2f2e1e4
 
 build:
   noarch: python
