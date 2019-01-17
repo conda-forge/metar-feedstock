@@ -1,18 +1,17 @@
-{% set name = "metar" %}
 {% set version = "1.7.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: metar
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/m/metar/metar-{{ version }}.tar.gz
   sha256: bee673dab1cf3767d5a5fcb8b67a2d0194f686503050ab94ffd08fd9a2f2e1e4
 
 build:
-  noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -29,10 +28,7 @@ about:
   home: http://github.com/python-metar/python-metar
   license: MIT
   license_family: MIT
-
-  ## Currently the license isn't available in the pypi build. we'll
-  ## uncomment this line later after the next release.
-  #license_file: LICENSE
+  license_file: LICENSE
   summary: |
     python-metar is a python package that parses coded METAR weather reports.
   description: |
