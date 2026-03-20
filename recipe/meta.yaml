@@ -1,4 +1,4 @@
-{% set version = "1.11.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: metar
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/metar/metar-{{ version }}.tar.gz
-  sha256: 0e40e86eb03fdfafef71b14d74349e88e208bd4dc15e8734b3afcf129125378b
+  sha256: 2f096e101aaf8e952bedf2d5c327a1589081e50fe42e33af72a006e56c47b913
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
