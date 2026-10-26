@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.1"
+  version: "2.0.2"
 
 package:
   name: metar
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/metar/metar-${{ version }}.tar.gz
-  sha256: 2f096e101aaf8e952bedf2d5c327a1589081e50fe42e33af72a006e56c47b913
+  sha256: 8cf3b11906ead3103255964faf06905b50ddbd508d7c0d924d2ef8000bf82b80
 
 build:
   number: 0
